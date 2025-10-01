@@ -39,15 +39,18 @@ loginformindicator.forEach((indicate, i) => {
 const name_magic = document.querySelectorAll('.yeye-name-magic');
 const sentence_magic = document.getElementById('fancy-fancy');
 const kids_name = document.getElementById('childs-profile-creation-first-name');
+const apostrophe =  document.getElementById('apostrophe');
 
 function updateName() {
   const val = kids_name.value.trim(); 
   name_magic.forEach(el => el.textContent = val);
   if(val == ""){
-    sentence_magic.textContent = ""
+    sentence_magic.textContent = "";
+    apostrophe.textContent = "";
   }
   else{
-    sentence_magic.textContent =  ` Great ${val} will love learning with Kimba 😊`;
+    sentence_magic.textContent =  ` Great! ${val} is going to love learning with Kimba 😊`;
+    apostrophe.textContent = "'s";
   }
 }
 
