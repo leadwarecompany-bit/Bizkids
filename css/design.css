@@ -1153,4 +1153,7 @@ body{
 .kids-profile-creation-form-button:hover{
     transform: scale(1.05);
 }
+.age-range-active{
+    border: 3px solid #A855F7;
+}
 /* styling kids profile creation page done */
