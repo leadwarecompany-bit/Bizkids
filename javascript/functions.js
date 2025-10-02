@@ -41,16 +41,22 @@ const sentence_magic = document.getElementById('fancy-fancy');
 const kids_name = document.getElementById('childs-profile-creation-first-name');
 const apostrophe =  document.getElementById('apostrophe');
 
+
 function updateName() {
   const val = kids_name.value.trim(); 
+  const lastChar = val ? val[val.length - 1] : "";
+  const capitalized = val ? val[0].toUpperCase() + val.slice(1) : "";
   name_magic.forEach(el => el.textContent = val);
   if(val == ""){
     sentence_magic.textContent = "";
     apostrophe.textContent = "";
   }
   else{
-    sentence_magic.textContent =  ` Great! ${val} is going to love learning with Kimba 😊`;
+    sentence_magic.textContent =  ` Great! ${capitalized} is going to love learning with Kimba 😊`;
     apostrophe.textContent = "'s";
+    if(lastChar === "s"){
+        apostrophe.textContent= "'";
+    }
   }
 }
 
