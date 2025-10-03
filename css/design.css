@@ -1446,4 +1446,120 @@ body{
     .hidden{
         display: none;
     }
+    .hero {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 5px;
+        gap: 15px;
+    }
+    .hero-left, .hero-right {
+        width: 100%;
+        padding: 0;
+    }
+    .hero-left-two-up, .hero-left-two-down {
+        font-size: 28px;
+    }
+    .hero-left-four {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .hero-left-four-button1, .hero-left-four-button2 {
+        width: 100%;
+        padding: 15px;
+        font-size: 14px;
+    }
+    .hero-right-background {
+        width: 100%;
+        height: 250px;
+    }
+    .hero-right-main {
+        width: 100%;
+        height: auto;
+        min-height: 200px;
+        position: static;
+        transform: none;
+    }
+    .courses-done .course-done {
+        width: 100%;
+        height: auto;
+    }
+    .landing-trustees {
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+    }
+    .why-us-cards {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0;
+    }
+    .why-us-card {
+        width: 95%;
+        height: auto;
+    }
+    .landing-courses {
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+    }
+    .landing-course {
+        width: 95%;
+        height: auto;
+    }
+    .landing-banner {
+        padding: 10px;
+        height: auto;
+        gap: 15px;
+    }
+    .landing-banner-first-text {
+        font-size: 28px;
+    }
+    .landing-banner-second-text {
+        width: 95%;
+        font-size: 16px;
+    }
+    .landing-banner-button {
+        width: 90%;
+        height: 60px;
+        font-size: 16px;
+    }
+    .footer-main {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+        padding: 20px 0;
+    }
+    .footer-kimba-details, .footer-min-sec {
+        width: 100%;
+    }
+    .login-page, .kids-profile-creation-page {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .firstie, .secondie {
+        width: 100%;
+        min-height: auto;
+        padding: 10px 0;
+    }
+    .first-section-login, .second-section-login-page {
+        width: 95%;
+        padding: 10px;
+    }
+    .kids-profile-creation-form-cont {
+        width: 95%;
+        padding: 10px;
+    }
+    .kids-profile-creation-form {
+        padding: 10px;
+    }
+    .kids-profile-creation-age-ranges {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .kids-profile-creation-age-range {
+        width: 95%;
+        height: auto;
+        gap: 10px;
+        padding: 10px;
+    
 }
