@@ -41,6 +41,7 @@ button{
 }
 body{
     background-color: #FFF7F2;
+   
 }
 /* styling header  */
 .header{
@@ -64,6 +65,16 @@ body{
 .logo-img{
    width: 100%;
 }
+/* daniel's hamburger menu styling */
+.hamburger-menu{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+    gap: 5px;
+}
+
+/* daniel's hamburger menu styling done */
 .navbar{
     display: flex;
     justify-content: center;
