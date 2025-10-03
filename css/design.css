@@ -1361,3 +1361,70 @@ body{
     color: #474646;
 }
 /* styling of main page done */
+/* styling hamburger menu */
+.hamburger-menu{
+    display: flex;
+    padding: 10px 20px;
+    border-radius: 0.5rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #A855F7;
+    cursor: pointer;
+    display: none;
+}
+.hamburger-icon{
+    font-size: 70px;
+    color: white;
+    display: none;
+}
+.hamburger-icon-active{
+    display: flex;
+}
+/* styling hamburger menu done */
+@media screen and (max-width: 768px){
+    .hamburger-menu{
+        display: flex;
+    }
+     .header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        gap: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+    .logo {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding: 0px 10px;
+    }
+    .logo-img {
+        width: 120px;
+    }
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        justify-content: left;
+    }
+    .navbar-links {
+        padding: 10px;
+        width: 100%;
+    }
+    .navbar-links:hover {
+        background-color: #A855F7;
+    }
+    .navbar-startbutton {
+        width: 100%;
+        border-radius: 0.5rem;
+
+    }
+    .na{
+       width: 100%; 
+       padding: 5px;
+    }
+}
