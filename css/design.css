@@ -25,6 +25,11 @@ a{
 ::-webkit-scrollbar-corner {
   background: #f1f1f1;
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 button{
     background:  #A855F7 ;
     color: white;
@@ -794,6 +799,7 @@ body{
     flex-direction: column;
     width: 100%;
 }
+
 .login-parent-benefits{
     width: 100%;
     padding: 2px;
