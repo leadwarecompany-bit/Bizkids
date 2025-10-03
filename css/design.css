@@ -1174,3 +1174,178 @@ body{
     border: 3px solid #A855F7;
 }
 /* styling kids profile creation page done */
+
+/* styling of main page  */
+.main-page{
+    background: linear-gradient(to right, #FFF7F2, #f3e1fa);
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    height: 100vh;
+}
+.dashboard{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+.navbar-menu-section{
+    width: 25%;
+    display: flex;
+    height: 100vh;
+    background-color: white;
+    justify-content: center;
+}
+.navbar-menu{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 100%!important;
+    align-items: center;
+    gap: 20px;
+}
+.navbar-menu-logo{
+    width: 150px;
+    overflow: hidden;
+}
+.navbar-menu-logo-img{
+    width: 100%;
+}
+.navbar-menu-items{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 20px 5px;
+    gap: 15px;
+}
+.navbar-menu-item{
+    padding: 15px 10px;
+    width: 100%;
+    background-color: white;
+    color: rgb(72, 72, 72);
+    box-shadow: 0 0 7px #e6daf1;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 1s;
+}
+.navbar-menu-item:hover {
+    background-color: #A855F7;
+    transform: scale(1.05);
+}
+.navbar-menu-item:hover a {
+    color: white;
+}
+.navbar-active{
+    background-color: #A855F7;
+   
+}
+.navbar-active a{
+     color: white!important;
+}
+.navbar-menu-item a{
+    font-size: 15px;
+    text-decoration: none;
+    color: #3b3b3b;
+    transition: 1s;
+}
+.main-body{
+    width: 75%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    gap: 30px;
+    overflow: scroll;
+    height: 100vh;
+}
+.dashboard-welcome-text{
+    font-size: 40px;
+    text-align: center;
+}
+.dashboard-profile{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.dashboard-profile-picture-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #A855F7;
+    font-size: 60px;
+    padding: 20px!important;
+
+}
+.dashboard-profile-text{
+    color: #3b3b3b;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.dashboard-status-section{
+    background-color: white;
+    padding: 30px;
+    width: 100%;
+    border-radius: 1rem;
+    gap: 40px!important;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.dashboard-status-section-writeup{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.dashboard-status-section-writeup-header{
+    font-size: 25px;
+}
+.dashboard-status-section-writeup-text,
+.dashboard-status-section-writeup-text-two{
+    font-size: 15px;
+    color: #474646;
+}
+.dashboard-status-section-progress-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+}
+.dashboard-progress-bar-writeup{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.dashboard-progress-bar-write-up1{
+    font-size: 15px;
+    color: #474646;
+}
+.dashboard-progress-bar{
+    width: 100%;
+    height: 30px;
+    border: none;
+}
+.dashboard-progress-bar::-webkit-progress-bar{
+    background-color: #f1e8f9;
+    padding: 4px;
+    border-radius: 2rem;
+}
+.dashboard-progress-bar::-webkit-progress-value{
+    background-color: #A855F7;
+    border-radius: 2rem;
+}
+.dashboard-progress-level{
+    font-size: 15px;
+    color: #474646;
+}
+/* styling of main page done */
