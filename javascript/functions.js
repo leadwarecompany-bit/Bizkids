@@ -95,5 +95,3 @@ age_range_options.forEach((opt, o) => {
 
 if (age_range_options.length) show_options(0);
 
-const hamburgerMenu =  document.getElementById('hamburger-menu');
-const hambmurgerIcon =  document.querySelectorAll('hamburger-')

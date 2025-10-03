@@ -77,11 +77,20 @@ body{
 /* daniel's hamburger menu styling done */
 .navbar{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 35px;
+    width: 90%;
 
 }
+.navvy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 90%;
+
+}
+
 .navbar-links{
     padding: 30px;
 }
@@ -1410,9 +1419,16 @@ body{
         gap: 15px;
         width: 100%;
         justify-content: left;
+        display:flex;
+    }
+    .navvy{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
     }
     .navbar-links {
-        padding: 10px;
+        padding: 10px 0px;
         width: 100%;
     }
     .navbar-links:hover {
@@ -1426,5 +1442,8 @@ body{
     .na{
        width: 100%; 
        padding: 5px;
+    }
+    .hidden{
+        display: none;
     }
 }
