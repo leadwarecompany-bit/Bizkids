@@ -4,4 +4,10 @@ const navbar = document.getElementById('navbar');
 
 hamburgerMenu.addEventListener('click', () => {
         navbar.classList.toggle('hidden');
+        hamburgerIcon.forEach((icon, i) => {
+            icon.classList.toggle("hamburger-icon-active")
+        });
+
     });
+
+

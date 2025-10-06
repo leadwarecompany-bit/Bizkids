@@ -37,6 +37,7 @@ button{
     border-radius: 5rem;
     padding: 10px;
     font-size: 17px;
+    cursor: pointer;
 
 }
 body{
@@ -1200,13 +1201,20 @@ body{
     background: linear-gradient(to right, #FFF7F2, #f3e1fa);
     padding: 0;
     margin: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
+    height: 100vh;
+}
+.dashboard-cont{
+    display: flex;
+    width: 100%;
     height: 100vh;
 }
 .dashboard{
     display: flex;
     width: 100%;
     height: 100vh;
+    position: relative;
+    z-index: 20;
 }
 .navbar-menu-section{
     width: 25%;
@@ -1391,7 +1399,119 @@ body{
     display: flex;
 }
 /* styling hamburger menu done */
-@media screen and (max-width: 768px){
+/* styling modal  */
+/* modal base */
+.modals-overlay {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: rgba(0,0,0,0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .28s ease, visibility .28s ease;
+  z-index: 9999;
+}
+
+/* when visible */
+.modals-overlay:not(.modal-inactive) {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* modal card */
+.modal {
+  background: #fff;
+  border-radius: 12px;
+  width: min(92%, 520px);
+  max-width: 470px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+  transform: translateY(8px) scale(.80);
+  transition: transform .28s cubic-bezier(.2,.9,.2,1), opacity .28s ease;
+  opacity: 0;
+  padding: 20px;
+}
+
+/* animate into place when overlay visible */
+.modals-overlay:not(.modal-inactive) .modal {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+}
+
+.modal-header-cont {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap: 10px;
+    width: 100%;
+}
+.modal-header {
+    font-size:25px; 
+    margin:0; 
+    width: 95%;
+    text-align: center;
+}
+.modal-cancel {
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 6px;
+}
+.modal-cancel i{
+    font-size: 30px;
+}
+.modal-cancel:hover {
+    background: #f2f2f2;
+}
+
+/* avatar grid */
+.the-change-avatar-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 12px;
+}
+.change-avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    gap: 8px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: transform .18s ease, border-color .18s ease,;
+}
+.avatar-choice{
+    border-color: #EEE;
+}
+.change-avatar h1 {
+    font-size:36px;
+    margin:0; 
+}
+.change-avatar p {
+    margin:0; font-size:14px;
+    color:#333;
+}
+
+
+.change-avatar:hover {
+    transform: translateY(-3px);
+    border-color: #EEE;
+}
+
+.change-avatar-button {
+    margin-top: 14px;
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    background: #A855F7;
+    color: white;
+    border: none;
+}
+
+/* styling modal done */
+@media screen and (max-width: 900px){
     .hamburger-menu{
         display: flex;
     }
@@ -1562,4 +1682,5 @@ body{
         gap: 10px;
         padding: 10px;
     
+}
 }
