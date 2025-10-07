@@ -1245,8 +1245,8 @@ body{
     padding: 20px 5px;
     gap: 15px;
 }
+
 .navbar-menu-item{
-    padding: 15px 10px;
     width: 100%;
     background-color: white;
     color: rgb(72, 72, 72);
@@ -1264,12 +1264,18 @@ body{
 }
 .navbar-active a{
      color: white!important;
+     width: 100%;
+     height: 100%;
 }
 .navbar-menu-item a{
     font-size: 15px;
     text-decoration: none;
     color: #3b3b3b;
     transition: 1s;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 15px 10px;
 }
 .main-body{
     width: 75%;
