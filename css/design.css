@@ -87,15 +87,22 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 50px;
     width: 90%;
-
 }
-
+.extra-navbar-href{
+        display: flex;
+        text-decoration: none!important;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        height: auto;
+        transition: 1s;
+        border-radius: 4rem;
+    }
 .navbar-links{
-    padding: 30px;
-}
-.navbar-link{
+    padding: 10px;
     text-decoration: none;
     text-transform: capitalize;
     padding: 8px;
@@ -103,7 +110,8 @@ body{
     border-radius: 3rem;
     color: #3b3b3b;
 }
-.navbar-link:hover{
+
+.extra-navbar-href:hover{
     border: 3px solid #A855F7 ;
     
 }
@@ -1702,7 +1710,7 @@ body{
 }
 
 /* styling portfolio done */
-@media screen and (max-width: 900px){
+@media screen and (max-width: 1024px){
     .hamburger-menu{
         display: flex;
     }
@@ -1715,6 +1723,7 @@ body{
         display: flex;
         justify-content: left;
         align-items: center;
+        background-color: rgba(255, 255, 255, 1);
     }
     .logo {
         display: flex;
@@ -1737,10 +1746,28 @@ body{
         justify-content: center;
         flex-direction: column;
         width: 100%;
+        gap: 10px;
+    }
+    .extra-navbar-href{
+        display: flex;
+        text-decoration: none!important;
+        width: 100%!important;
+        height: 50px;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+    }
+    .extra-navbar-href:hover{
+        border: none;
+    }
+    .extra-navbar-href:hover .navbar-links{
+        color: white;
     }
     .navbar-links {
-        padding: 10px 0px;
+        padding: 10px;
         width: 100%;
+        height: 100%;
+        border-radius: 0rem;
     }
     .navbar-links:hover {
         background-color: #A855F7;
@@ -1893,7 +1920,7 @@ body{
     }
     .hero-right-main{
         width: 90vw;
-        height: 45vh;
+        height: fit-content;
         overflow: hidden;
         gap: 15px;
     }
@@ -1902,11 +1929,11 @@ body{
         position: relative;
         height: 100%;
     }
-    .bounce-ball{
-        /* animation: none; */
-    }
+    /* .bounce-ball{
+        animation: none;
+    } */
     .course-done{
-        width: 44%;
+        width: 48%;
     }
     .what-parent-carousel{
         width: 100%;
@@ -1926,7 +1953,7 @@ body{
         height: 45px;
     }
     .hero-left-one{
-        width: 80%;
+        width: fit-content!important;
     }
     .landing-banner-button{
         width: 100%;
