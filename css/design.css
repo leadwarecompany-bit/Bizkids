@@ -1409,6 +1409,7 @@ body{
     display: flex;
 }
 /* styling hamburger menu done */
+
 /* styling modal  */
 /* modal base */
 .modals-overlay {
@@ -2118,10 +2119,121 @@ body{
     .navbar-menu-section{
         display: none;
     }
-    .courses{
-        
+    /* dashboard and courses mobile styles */
+    .dashboard-cont,
+    .courses-cont,
+    .portfolios-cont,
+    .course-cont,
+    .main-course-cont {
+        flex-direction: column;
+        height: auto;
+        min-height: 100vh;
     }
-
+    .dashboard,
+    .courses-section,
+    .portfolio-section,
+    .course-section,
+    .course-explanation-section {
+        width: 100%;
+        padding: 10px;
+        height: auto;
+        min-height: 100vh;
+        overflow-y: visible;
+    }
+    .main-body {
+        width: 100%;
+        padding: 10px;
+        height: auto;
+        overflow: visible;
+    }
+    .dashboard-welcome-text,
+    .courses-header,
+    .portfolio-header,
+    .course-header {
+        font-size: 24px;
+        text-align: center;
+    }
+    .dashboard-profile-picture-cont {
+        width: 80px;
+        height: 80px;
+        font-size: 36px;
+        padding: 10px !important;
+    }
+    .dashboard-profile-text {
+        font-size: 16px;
+    }
+    .dashboard-status-section {
+        padding: 15px;
+        gap: 15px !important;
+    }
+    .dashboard-status-section-writeup-header {
+        font-size: 18px;
+    }
+    .dashboard-progress-bar {
+        height: 18px;
+    }
+    .dashboard-progress-bar-writeup {
+        font-size: 13px;
+    }
+    .dashboard-progress-level {
+        font-size: 13px;
+    }
+    .courses,
+    .portfolios,
+    .sub-courses {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+    .course,
+    .portfolio,
+    .individual-sub-course {
+        width: 98%;
+        margin: 0 0 10px 0;
+        padding: 10px;
+        gap: 10px;
+    }
+    .course-title,
+    .portfolio-title,
+    .sub-course-title {
+        font-size: 18px;
+    }
+    .course-details,
+    .portfolio-details,
+    .sub-course-details {
+        font-size: 13px;
+    }
+    .course-button,
+    .portfolio-button,
+    .sub-course-button {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+    }
+    .course-lesson,
+    .portfolio-sub-title,
+    .course-extra-details {
+        font-size: 13px;
+    }
+    .navbar-menu-section {
+        display: none !important;
+    }
+}
+.main-hamburger-menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 100vh;
+    background-color: white;
+    box-shadow: 2px 0 8px rgba(0,0,0,0.1);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
 }
 
 

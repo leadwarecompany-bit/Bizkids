@@ -94,4 +94,3 @@ age_range_options.forEach((opt, o) => {
 });
 
 if (age_range_options.length) show_options(0);
-
