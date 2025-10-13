@@ -1930,7 +1930,7 @@ body{
         height: 100%;
     }
     .bounce-ball{
-        /* animation: none; */
+         animation: bounce none ; 
     }
     .course-done{
         width: 48%;
@@ -1959,4 +1959,33 @@ body{
         width: 100%;
         padding: 10px 20px;
     }
+    .firstie{
+        display: none;
+    }
+    .login-page{
+        justify-content: center;
+        height: 100vh;
+        padding: 5px;
+    }
+    .kids-profile-creation-form-cont{
+    width: 110%;
+    }
+    .navvy{
+        height: auto;
+    }
+    .navbar-menu-section{
+        display: flex;
+        gap: 5px;
+        width: auto;
+    }
+    .navbar-menu-section{
+        display: none;
+    }
+    .courses{
+        
+    }
+
 }
+
+
+/* Mobile-specific refinements for login / signup pages */
