@@ -51,15 +51,116 @@
                 </span>
             </div>
             <div class="course-explain-main-body">
-                <div class="course-video-cont">
-                    <video class="course-video" controls>
-                        <source src="/video/WhatsApp Video 2025-10-13 at 09.49.57_190ce54c.mp4" type="video/mp4">
+                <div class="course-video-cont not-played" >
+                    <button onclick="" class="start-play-button" id="start-play-button"><i class='bxr  bxs-play'  ></i></button>
+                    <video class="course-video" id="course-video" poster="/img/kaiju-no-8-monster-img.jpg">
+                        <source src="/video/AnimePahe_Kaijuu_8-gou_-_22_360p_SubsPlease.mp4" type="video/mp4">
                     </video>
                 </div>
+                <div class="course-explain-subdivision-cont">
+                    <div class="course-explain-sub-division">
+                        <span class="course-explain-subdivision-header-cont">
+                            <h1 class="course-explain-sub-division-header">
+                                The Lemonade Stand Dream: What’s a Business?
+                            </h1>
+                            <p class="course-explain-sub-division-details">
+                                Have you ever imagined selling the yummiest cookies or the most refreshing lemonade on a sunny day? Guess what — that’s the beginning of a business!
+                            </p>
+                        </span>
+                        <span class="course-explain-sub-division-list-cont">
+                            <p class="course-explain-sub-division-lists-header">A business is simply:</p>
+                            <ul class="course-explain-sub-division-lists">
+                                <li class="course-explain-sub-division-list">Making or doing something people want (like tasty lemonade, cool greeting cards, or even walking dogs!)</li>
+                                <li class="course-explain-sub-division-list">And in return, they give you money 💵</li>
+                            </ul>
+                        </span>
+                        <p class="course-explain-sub-division-conclusion">
+                            It’s about solving a problem or making someone’s day brighter.
+                        </p>
+                    </div>
+                    <div class="course-explain-sub-division">
+                        <h1 class="course-explain-sub-division-header">
+                            A Lemonade Stand Example
+                        </h1>
+                        <span class="course-explain-sub-division-list-cont">
+                            <p class="course-explain-sub-division-lists-header">Picture this: You set up a small table outside your home</p>
+                            <ul class="course-explain-sub-division-lists">
+                                <li class="course-explain-sub-division-list">You’ve got lemons 🍋</li>
+                                <li class="course-explain-sub-division-list">Sugar 🍬</li>
+                                <li class="course-explain-sub-division-list">Cups 🥤</li>
+                                <li class="course-explain-sub-division-list">And a big smile 😃</li>
+                            </ul>
+                        </span>
+                        <p class="course-explain-sub-division-conclusion">
+                            People passing by stop, buy your lemonade, and leave happy. That’s your first taste of running a business!
+                        </p>
+                    </div>
+                    <div class="course-explain-sub-division">
+                        <h1 class="course-explain-sub-division-header">
+                             Business Ideas for Kids Like You 💡
+                        </h1>
+                        <span class="course-explain-sub-division-list-cont">
+                            <p class="course-explain-sub-division-lists-header">You are not into lemonade? That’s okay! Think about what people around you might enjoy or need:</p>
+                            <ul class="course-explain-sub-division-lists">
+                                <li class="course-explain-sub-division-list">Greeting Cards – Create colorful cards that make people smile 🎨</li>
+                                <li class="course-explain-sub-division-list">Garden Helper – Offer to water plants or tidy up gardens 🌱</li>
+                                <li class="course-explain-sub-division-list">Pet Care – Walk the neighbor’s dog or play with pets 🐶</li>
+                            </ul>
+                        </span>
+                        <p class="course-explain-sub-division-conclusion">
+                            Remember: A business can be big or small — it’s all about helping people while having fun.</p>
+                    </div>
+                    <div class="course-explain-sub-division">
+                        <h1 class="course-explain-sub-division-header">
+                             🧠 Smart Kid CEO Tip:
+                        </h1>
+                        <p class="course-explain-sub-division-details">
+                            “Every great business starts with a simple idea — even a glass of lemonade!”
+                        </p>
+                    </div>
+                    <div class="course-explain-sub-division">
+                        <h1 class="course-explain-sub-division-header">
+                            Activity Time! (Get your tablet or a book and pen)✍ 
+                        </h1>
+                        <span class="course-explain-sub-division-list-cont">
+                            <p class="course-explain-sub-division-lists-header">Draw your dream business by answering these questions</p>
+                            <ul class="course-explain-sub-division-lists">
+                                <li class="course-explain-sub-division-list">What will you sell?</li>
+                                <li class="course-explain-sub-division-list">Who will you help?</li>
+                                <li class="course-explain-sub-division-list">How will it make people happy?</li>
+                            </ul>
+                        </span>
+                        <p class="course-explain-sub-division-conclusion">
+                            👏 Congrats! You just discovered what a business really is. This is your first step toward becoming a Mini CEO! </p>
+                    </div>
+                </div>
             </div>
-            
+            <div class="course-explain-buttons-cont">
+                <a href="" class="course-explain-href-houser">
+                    <button class="course-explain-button1"><i class='bxr  bx-arrow-left-stroke'  ></i>  Previous Lesson</button>
+                </a>
+                <a href="/courses.html" class="course-explain-href-houser">
+                    <button class="course-explain-button2">Back to Lessons</button>
+                </a>
+                <a href="" class="course-explain-href-houser">
+                    <button class="course-explain-button1">Next Lesson <i class='bxr  bx-arrow-right'  ></i> </button>
+                </a>
+            </div>
         </div>
     </div>
 </body>
+<script>
+    const course_video = document.getElementById('course-video');
+    const start_play_button = document.getElementById('start-play-button');
+
+    function playvideo(){
+        course_video.play();
+        course_video.setAttribute('controls', 'controls');
+    }
+    start_play_button.addEventListener('click', () => {
+        playvideo();
+        start_play_button.style.display = "none"
+    })
+</script>
 <script src="/javascript/modal.js"></script>
 </html>
