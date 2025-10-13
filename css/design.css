@@ -1606,6 +1606,14 @@ body{
     width: 100%;
     flex-direction: column;
 }
+.course-into-button{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    height: fit-content;
+}
 /* styling courses done */
 /* styling portfolio */
 .portfolios-cont{
@@ -1710,6 +1718,135 @@ body{
 }
 
 /* styling portfolio done */
+/* styling sub-course  */
+
+.course-cont{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+.course-section{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    overflow-y: scroll;
+    padding: 40px;
+    gap: 20px;
+}
+.individual-course-header-cont{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.individual-course-up-cont{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+}
+.course-header{
+    font-size: 40px;
+    width: 100%;
+}
+.course-subtitle{
+    font-size: 18px;
+    width: 100%;
+    color: #474646;
+}
+.back-to-courses-href{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 1s;
+}
+.back-to-courses-href:hover{
+    transform: scale(1.04);
+}
+.back-to-courses-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+}
+.sub-courses{
+    display: flex;
+    width: 100%;
+    gap: 2%;
+    flex-wrap: wrap;
+}
+.individual-sub-course{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 47%;
+    padding: 2%;
+    margin: 1%;
+    border-radius: 1rem;
+    gap: 16px;
+    transition: 1s;
+    cursor: pointer;
+    background-color: #e5d7f2;
+}
+.individual-sub-course:hover{
+    transform: scale(1.04);
+}
+.sub-course-chapter{
+    font-size: 23px;
+    width: 100%;
+    color:   #A855F7;
+}
+.sub-course-title{
+    font-size: 23px;
+}
+.sub-course-details{
+    font-size: 17px;
+    color: #474646;
+    width: 100%;
+}
+.course-extra-details{
+    font-size: 15px;
+    color: #474646;
+    width: 100%;
+}
+.courses-status{
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: green;
+    font-size: 15px;
+}
+.sub-course-button{
+    width: 85%;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 1s;
+}
+.course-button:hover{
+    transform: scale(1.04);
+}
+/* styling sub-course done */
+/* styling course explanation  */
+.main-course-cont{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+.course-explanation-section{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    overflow-y: scroll;
+    padding: 40px;
+    gap: 20px;
+}
+/* styling course explanation done */
 @media screen and (max-width: 1024px){
     .hamburger-menu{
         display: flex;
