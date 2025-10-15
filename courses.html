@@ -12,7 +12,15 @@
 </head>
 <body class="main-page">
     <div class="course-cont">
-        <div class="navbar-menu-section">
+        <div class="main-hamburger-menu" id="main-hamburger-menu">
+            <span class="main-hamburger-icon main-hamburger-icon-active">
+                <i class='bxr  bx-menu-wide ' ></i> 
+            </span>
+            <span class="main-hamburger-icon">
+                <i class='bxr  bx-x'  ></i> 
+            </span>
+        </div>
+        <div class="navbar-menu-section togglers">
             <div class="navbar-menu">
                 <div class="navbar-menu-logo">
                     <a href="/index.html">
@@ -38,7 +46,7 @@
                 </nav>
             </div> <!-- closed navbar-menu -->
         </div>
-        <div class="course-section">
+        <div class="main-body togglers now-active" id="main-body">
             <div class="individual-course-up-cont">
                 <a class="back-to-courses-href" href="/ecourses.html"><button class="back-to-courses-button"><i class='bxr  bx-arrow-left-stroke'  ></i>  Back to Courses</button></a>
                 <div class="individual-course-header-cont">
@@ -360,4 +368,5 @@
     </div>
 </body>
 <script src="/javascript/modal.js"></script>
+<script src="/javascript/hamburger_main.js"></script>
 </html>

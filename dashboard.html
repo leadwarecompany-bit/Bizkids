@@ -13,8 +13,15 @@
 <body class="main-page">
     <div class="dashboard-cont">
         <div class="dashboard">
-            
-            <div class="navbar-menu-section">
+            <div class="main-hamburger-menu" id="main-hamburger-menu">
+                <span class="main-hamburger-icon main-hamburger-icon-active">
+                    <i class='bxr  bx-menu-wide ' ></i> 
+                </span>
+                <span class="main-hamburger-icon">
+                   <i class='bxr  bx-x'  ></i> 
+                </span>
+            </div>
+            <div class="navbar-menu-section togglers">
                 <div class="navbar-menu">
                     <div class="navbar-menu-logo">
                         <a href="/index.html">
@@ -41,7 +48,7 @@
                 </div> <!-- closed navbar-menu -->
             </div>
 
-            <main class="main-body">
+            <main class="main-body togglers now-active" id="main-body">
             <h1 class="dashboard-welcome-text">Welcome, Little Learner</h1>
 
             <div class="dashboard-profile">
@@ -104,4 +111,5 @@
     </div>
 </body>
 <script src="/javascript/modal.js"></script>
+<script src="/javascript/hamburger_main.js"></script>
 </html>

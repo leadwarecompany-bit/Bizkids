@@ -66,16 +66,6 @@ body{
 .logo-img{
    width: 100%;
 }
-/* daniel's hamburger menu styling */
-.hamburger-menu{
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-    padding: 10px;
-    gap: 5px;
-}
-
-/* daniel's hamburger menu styling done */
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -1409,6 +1399,27 @@ body{
     display: flex;
 }
 /* styling hamburger menu done */
+/* styling main hamburger menu */
+.main-hamburger-menu{
+    padding: 10px 20px;
+    border-radius: 0.5rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #A855F7;
+    cursor: pointer;
+    display: none;
+    position: fixed;
+}
+.main-hamburger-icon{
+    font-size: 70px;
+    color: white;
+    display: none;
+}
+.main-hamburger-icon-active{
+    display: flex;
+}
+/* styling main hamburger menu done */
 
 /* styling modal  */
 /* modal base */
@@ -1473,6 +1484,9 @@ body{
 .modal-cancel:hover {
     background: #f2f2f2;
 }
+.modal-body{
+    width: 100%;
+}
 
 /* avatar grid */
 .the-change-avatar-form {
@@ -1480,12 +1494,13 @@ body{
     flex-wrap: wrap;
     gap: 12px;
     margin-top: 12px;
+    width: 100%;
 }
 .change-avatar {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 200px;
+    width: 48%;
     gap: 8px;
     padding: 10px;
     border-radius: 10px;
@@ -2264,14 +2279,16 @@ body{
         height: auto;
     }
     .navbar-menu-section{
-        display: flex;
-        gap: 5px;
-        width: auto;
-    }
-    .navbar-menu-section{
         display: none;
+        width: 100%;
     }
-    /* dashboard and courses mobile styles */
+    .now-active{
+        display: flex!important;
+    }
+    .main-page{
+        width: 100%;
+        overflow-y: visible;
+    }
     .dashboard-cont,
     .courses-cont,
     .portfolios-cont,
@@ -2281,18 +2298,8 @@ body{
         height: auto;
         min-height: 100vh;
     }
-    .dashboard,
-    .courses-section,
-    .portfolio-section,
-    .course-section,
-    .course-explanation-section {
-        width: 100%;
-        padding: 10px;
-        height: auto;
-        min-height: 100vh;
-        overflow-y: visible;
-    }
     .main-body {
+        display: none;
         width: 100%;
         padding: 10px;
         height: auto;
@@ -2368,25 +2375,50 @@ body{
         font-size: 13px;
     }
     .navbar-menu-section {
-        display: none !important;
+        display: none;
+    }
+    /* styling hamburger menu */
+
+    .main-hamburger-menu{
+        display: flex;
+        height: 55px;
+        width: 55px;
+        border-radius:50%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(168,85,247,0.8);
+        cursor: pointer;
+        position: fixed;
+        margin-left: 84%;
+        margin-top: 1%;
+        
+    }
+    .main-hamburger-icon{
+        color: white;
+        display: none;
+    }
+    .main-hamburger-icon-active{
+        display: flex;
+        font-size: 100px;
+    }
+    .main-hamburger-icon-active i{
+        font-size: 30px;
+    }
+    .course-explain-parent{
+        font-size: 18px;
+        width: 40%;
+    }
+    .course-explain-button1{
+        font-size: 12px;
+    }
+    .course-explain-button2{
+        font-size: 12px;
+    }
+    .course-explain-buttons-cont{
+        gap: 10px;
+    }
+    .modal-header{
+        font-size: 19px;
     }
 }
-.main-hamburger-menu{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 60%;
-    height: 100vh;
-    background-color: white;
-    box-shadow: 2px 0 8px rgba(0,0,0,0.1);
-    transform: translateX(-100%);
-    transition: transform 0.3s ease;
-    z-index: 10000;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    gap: 20px;
-}
-
-
-/* Mobile-specific refinements for login / signup pages */

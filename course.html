@@ -12,7 +12,15 @@
 </head>
 <body class="main-page">
     <div class="main-course-cont">
-        <div class="navbar-menu-section">
+        <div class="main-hamburger-menu" id="main-hamburger-menu">
+            <span class="main-hamburger-icon main-hamburger-icon-active">
+                <i class='bxr  bx-menu-wide ' ></i> 
+            </span>
+            <span class="main-hamburger-icon">
+                <i class='bxr  bx-x'  ></i> 
+            </span>
+        </div>
+        <div class="navbar-menu-section togglers">
             <div class="navbar-menu">
                 <div class="navbar-menu-logo">
                     <a href="/index.html">
@@ -38,7 +46,7 @@
                 </nav>
             </div> <!-- closed navbar-menu -->
         </div>
-        <div class="course-explanation-section">
+        <div class="main-body togglers now-active">
             <div class="course-explanation-header-cont">
                 <span class="course-explain-parent">
                     My First Businesss
@@ -163,4 +171,5 @@
     })
 </script>
 <script src="/javascript/modal.js"></script>
+<script src="/javascript/hamburger_main.js"></script>
 </html>
