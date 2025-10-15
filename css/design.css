@@ -2275,6 +2275,10 @@ body{
     .kids-profile-creation-form-cont{
     width: 110%;
     }
+    .navbar-menu-logo{
+        overflow: visible;
+        height: auto;
+    }
     .navvy{
         height: auto;
     }
