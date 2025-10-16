@@ -2394,9 +2394,9 @@ body{
         background-color: rgb(168,85,247,0.8);
         cursor: pointer;
         position: fixed;
-        margin-left: 84%;
-        margin-top: 1%;
-        
+        top: 1%;
+        left: 2%;
+        z-index: 1000;
     }
     .main-hamburger-icon{
         color: white;
@@ -2425,4 +2425,21 @@ body{
     .modal-header{
         font-size: 19px;
     }
+    @media screen  and (max-width: 400px){
+        .main-hamburger-menu{
+        height: 45px;
+        width: 45px;
+        top: 2%;
+        left: 3%;
+    }
+    }
+    @media screen and (max-width: 480px){
+        .main-hamburger-menu{
+        height: 40px;
+        width: 40px;
+        top: 3%;
+        left: 4%;
+    }
+    }
+    
 }
