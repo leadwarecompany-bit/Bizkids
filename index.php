@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KiMBA's Landing Page</title>
-    <link rel="stylesheet" href="/css/design.css">
+    <link rel="stylesheet" href="/Bizkids/css/design.css">
     <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,7 +44,7 @@
                 <!-- <div class="navbar-links"><a class="navbar-link" href="/index.html#courses">courses</a></div>
                 <div class="navbar-links"><a class="navbar-link" href="/index.html#reviews">reviews</a></div> -->
            </div>
-            <a class="na" style="cursor: pointer;" href="/login.html">
+            <a class="na" style="cursor: pointer;" href="/Bizkids/login.html">
                 <button style="cursor: pointer;" class="navbar-startbutton">blast off <i class='bxr  bx-rocket'  ></i> </button>
             </a>
         </div>
@@ -65,7 +65,7 @@
                 Empower your child with essential business skills through our interactive, gamified learning platform designed specifically for ages 6-18.
             </div>
             <div class="hero-left-four">
-                <a href="/login.html" style="cursor: pointer; text-decoration: none;">
+                <a href="/Bizkids/login.html" style="cursor: pointer; text-decoration: none;">
                     <button class="hero-left-four-button1">
                         Start Learning <i class='bxr  bxs-arrow-right'  ></i> 
                     </button>
@@ -409,7 +409,7 @@
         <p class="landing-banner-second-text">
             Join thousands of families who are already giving their children the business skills they need for tomorrow's world.
         </p>
-       <a href="/signup.html" style="cursor: pointer; text-decoration: none;">
+       <a href="/Bizkids/signup.html" style="cursor: pointer; text-decoration: none;">
         <button class="landing-banner-button" type="button">
             </i> Get Started for Free
         </button>
